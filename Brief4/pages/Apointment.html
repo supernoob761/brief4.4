@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="/assets/CSS/Apointment.css">
+</head>
+<body>
+    <div class="Navigation"> 
+    <a href="/index.html" class="logo">You<span class="highlight">Matter</span></a>  
+    <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/Doctor.html">Doctors</a></li>
+        <li><a href="/pages/Apointment.html">Appointments</a></li>
+        <button id="themeToggle">Dark</button>
+      </ul>
+    </nav>
+  </div> 
+  
+  <section id="main_section">
+  <div class="appointments-section">
+    <h2>Appointments</h2>
+    <p>Schedule your medical appointments with our experienced doctors.</p>
+
+<form id="appointmentForm">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="date" name="date" required>
+ 
+      <select id="doctor" name="doctor" required>
+        <option value="">Select a doctor</option>
+        <option value="gus">Gus</option>
+        <option value="House">House</option>
+        <option value="homer">Homer</option>
+      </select> 
+  <button type="submit">Add Appointment</button>
+</form>
+
+    <div id="appointmentsList">
+      <h3>Submitted Appointments</h3>
+      <ul id="appointments"></ul>
+    </div>
+  </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 YouMatter - École de Développement Informatique</p>
+    <p>Tous droits réservés | Mentions légales | Politique de confidentialité</p>
+  </footer>  
+  <script src="/assets/JS/Burger.js"></script>
+  <script src="/assets/JS/Apointment.js"></script>
+  <script src="/assets/JS/theamechange.js"></script>
+</body>
+</html>
